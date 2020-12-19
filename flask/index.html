@@ -10,8 +10,19 @@
 </head>
 <body>
     <form name="myForm" onsubmit="return validateForm()" action="http://127.0.0.1:5000/handle_data" method="post">
-        <input type="text" class="form-control" name="projectFilePath">
-        <input type="text" class="form-control" name="projectFilePath2"><br/>
+        <label for="exampleInputEmail1">Faturamento ultimos 12 meses</label>
+        <input type="text" class="form-control" name="revenues-twelve-months"><br/>
+        <label for="exampleInputEmail1">Faturamento mês</label>
+        <input type="text" class="form-control" name="revenue-month"><br/>
+
+        <label for="exampleFormControlSelect2">Anexo do Simples Nacional</label>
+        <select name="attachment">
+            <option value="ANEXOI">ANEXO I</option>
+            <option value="ANEXOII">ANEXO II</option>
+            <option value="ANEXOIII">ANEXO III</option>
+            <option value="ANEXOIV">ANEXO IV</option>
+            <option value="ANEXOV">ANEXO V</option>
+        </select><br/>
         <input type="submit">
     </form>
 
