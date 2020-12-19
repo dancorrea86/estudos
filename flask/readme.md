@@ -1,6 +1,6 @@
 # Readme
 
-This project is for calculation of "Simples Nacional", tax regime for little companys in the Brazil.
+This project is for the calculation of "Simples Nacional", tax regime for little companies in Brazil.
 
 # Dependêncies
 
@@ -9,9 +9,9 @@ This project is for calculation of "Simples Nacional", tax regime for little com
 
 # Getting started
 
-First clone the project, for the project works in your local machine it is necessary to install 1 module of the Python.
+First clone the project, for the project works on your local machine it is necessary to install 1 module of Python.
 
-With the python instaled in you machine, instale the module Virtualenv.
+With Python installed in your machine, install the module Virtualenv.
 
 pip install virtualenv
 
@@ -19,7 +19,7 @@ Using the terminal, go to the project paste and create the "venv", using the com
 
 pip install virtualenv
 
-And after the instalation, activate the "venv" with the command:
+And after the installation, activate the "venv" with the command:
 
 venv_name\Scripts\activate.bat
 
@@ -33,6 +33,11 @@ With the project in your local machine, open the index.html file in the browser
 
 ![alt text](./readme/Browser_view.png)
 
+Open the project paste in the terminal, and with the "venv" activate run the file "flaskfile.py".
+
+![alt text](./readme/Terminal.png)
+
+The browser with the index.html is going to be the client-side and the python file "flaskfile.py" going to be the server-side the receives the http form and use the file "script.py" to make the calculation, that will return to the browser.
 
 
 
