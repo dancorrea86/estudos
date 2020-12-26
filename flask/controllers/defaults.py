@@ -1,5 +1,4 @@
-from flask import Flask, request
-app =  Flask(__name__)
+from ../ import app
 
 @app.route('/')
 def index():
@@ -24,6 +23,3 @@ def upload_file():
         f = request.files['the_file']
         f.save('/var/www/uploads/uploaded_file.txt')
     return 'ok'
-
-if __name__ == "__main__":
-    app.run()

@@ -4,7 +4,7 @@ from app import app, db
 
 from app.models.tables import User
 from app.models.forms import LoginForm
-from app. import login_manager
+from app import login_manager
 
 @app.route("/index")
 @app.route("/")
