@@ -12,12 +12,7 @@ migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
-login_manager = LoginManager()
-login_manager.init_app(app)
-
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.get(user_id)
+login_manager = LoginManager(app)
 
 from app.models import tables, forms
 from app.controllers import default
