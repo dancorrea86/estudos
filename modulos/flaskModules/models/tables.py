@@ -14,6 +14,7 @@ class User(db.Model):
 
     create_dttm = db.Column(db.DateTime, server_default=db.func.current_timestamp())
 
+    products = db.relationship('Product', secondary=association_table, backref=db.backref('products', lazy='dynamic'), lazy='dynamic')
     products = relationship("Product", secondary="orders")
 
 class Product(db.Model):
