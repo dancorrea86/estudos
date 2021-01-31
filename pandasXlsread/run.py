@@ -1,3 +1,7 @@
-from app import app
+import app
+from app.readXls import readXlsFile
 
-app.readXls.readXls.readXls('Planilha Exemplo.xls')
+data = app.readXls.readXlsFile.readXls('Planilha Exemplo.xls')
+
+for register in data.index:
+    print(data['Nome'][register])
