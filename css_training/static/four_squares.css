@@ -1,0 +1,44 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.square {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+
+.square_blue {
+    background-color: blue;
+}
+
+.square_red {
+    background-color: rgb(255, 0, 0);
+}
+
+.square_green {
+    background-color: rgb(0, 255, 42);
+}
+
+.square_yellow {
+    background-color: rgb(217, 255, 0);
+}
